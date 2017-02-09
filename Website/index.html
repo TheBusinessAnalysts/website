@@ -159,17 +159,30 @@
         $(function () {
             var pull = $('#pull');
             menu = $('nav ul');
-            menuHeight = menu.height();
-            $(pull).on('click', function (e) {
-                e.preventDefault();
-                menu.slideToggle();
-            });
-            $(window).resize(function () {
+			
+			//Display correct menu style
+			
+			$(window).resize(function () {
                 var w = $(window).width();
                 if (w > 320 && menu.is(':hidden')) {
                     menu.removeAttr('style');
                 }
             });
+			
+			//Open and close pull menu
+			
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            
+			//Close pull menu when item is selected
+			
+			$(menu).on('click', function () {
+				if(pull.is(':visible')) {
+					menu.slideToggle();
+				}
+			});
         });
     </script>
     <!----//End-top-nav-script---->

@@ -2299,10 +2299,6 @@ ul.social-ic-icons li.behance a span {
     background-position: -221px -53px;
 }
 
-ul.social-ic-icons li.dribble a span {
-    background-position: -143px -53px;
-}
-
 ul.social-ic-icons li.message a span:hover {
     background-position: -58px -7px;
 }
@@ -2317,10 +2313,6 @@ ul.social-ic-icons li.twitter a span:hover {
 
 ul.social-ic-icons li.behance a span:hover {
     background-position: -221px -7px;
-}
-
-ul.social-ic-icons li.dribble a span:hover {
-    background-position: -143px -9px;
 }
 
 /*begin test voor overlay kindengezin reference*/
