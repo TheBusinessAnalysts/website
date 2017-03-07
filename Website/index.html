@@ -169,6 +169,18 @@
                 }
             });
 			
+			//Remove focus from item once active
+			
+			$(window).scroll(function () {
+				$(menu).find('li a').each(function () {
+					var anchorOffset = Math.floor($($(this).attr('href')).offset().top);
+					
+					if ($(window).scrollTop() == anchorOffset) {
+						$(this).blur();
+					}
+				});
+			});
+			
 			//Open and close pull menu
 			
             $(pull).on('click', function (e) {
@@ -223,8 +235,8 @@
     <!--end google analytics trackinginfo-->
 
     <!--Start cookiewetgeving-->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <script>
         window.addEventListener("load", function(){
             window.cookieconsent.initialise({

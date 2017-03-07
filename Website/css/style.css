@@ -121,9 +121,10 @@ body a {
 }
 
 .top-nav ul li.active a,
-.top-nav ul li a:hover {
-    color: #FF504A;
+.top-nav ul li a:hover,
+.top-nav ul li a:focus {
     border-bottom: 3px solid #FF504A;
+    color: #FF504A;
 }
 
 .logo a {
