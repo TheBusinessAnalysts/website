@@ -242,10 +242,11 @@
             window.cookieconsent.initialise({
                 "palette": {
                     "popup": {
-                        "background": "#252e39"
+                        "background":"#252e39"
                     },
                     "button": {
-                        "background": "#14a7d0"
+                        "background": "#FC635E",
+                        "color": "#FFFFFF"
                     }
                 },
                 "position": "bottom-right",
@@ -541,7 +542,8 @@
                 <p>Wij analyseren de totaliteit van de Enterprise architectuur met speciale aandacht voor het afstemmen
                     van business services op het requirement management. Wij nemen u mee in een dynamisch plan waaruit
                     een pragmatisch werkmiddel ontstaat waardoor u sneller zal kunnen schakelen dan uw concurrentie
-                    vandaag.</p>
+                    vandaag. Sinds 2016 hebben we onze specialisten in enterprise architectuur gebundeld in een nieuwe unit, 
+                    <u><a href="http://www.bespokeservices.be/" target="_blank">Bespoke services</a></u>. Onze architecten zijn experten in het coachen en                        begeleiden van uw organisatie</p>
                 <!--<a class="wedobtn" href="http://www.tba.cliffdepreytere.eu" target="_blank">Meer details</a>-->
             </div>
         </div>
@@ -761,7 +763,6 @@
                 filterList.init();
             });
         </script>
-
         <!----//End-portfolio-script----->
 
         <ul id="filters" class="clearfix">
@@ -770,6 +771,20 @@
             <li><span class="filter" data-filter="web">PRIVATE</span></li>
         </ul>
         <div id="portfoliolist">
+            
+            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                <div class="portfolio-wrapper">
+                    <div class="hvr-shrink">
+                    <a data-toggle="modal" data-target="#Modalkindengezin" href="#ref_kindengezin"
+                       class="b-link-stripe b-animate-go  thickbox">
+                        <img class="p-img" src="images/ref_kg.jpg" alt="kindengezin"/>
+                    </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--voorlopig gedisabled totdat de echte teksten/logo's beschikbaar zijn
+
             <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
                 <div class="portfolio-wrapper">
                     <a data-toggle="modal" data-target=".bs-example-modal-md" href="#"
@@ -891,17 +906,8 @@
                     </a>
                 </div>
             </div>
-            <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                <div class="portfolio-wrapper">
-                    <a data-toggle="modal" data-target="#Modalkindengezin" href="#ref_kindengezin"
-                       class="b-link-stripe b-animate-go  thickbox">
-                        <img class="p-img" src="images/kindengezin.png" alt="test"/>
-                        <div class="b-wrapper"><h2 class="b-animate b-from-left b-delay03"><img
-                                src="images/link-ico.png" alt="test"/></h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            
+            voorlopig gedisabled totdat de echte teksten/logo's beschikbaar zijn-->
 
             <!--- begin test kindengezin overlay --->
             <!-- Modal -->
@@ -923,7 +929,7 @@
 								<div class="modal-body-right">
 									<center>
 										<div class="modal-client-logo-div">
-											<img class="modal-client-logo" src="images/logo_kindengezin.png" alt="Kind & Gezin"/>
+											<img class="modal-client-logo" src="images/logo-Kind-en-Gezin.png" alt="Kind & Gezin"/>
 										</div>
 									</center>
 									
@@ -961,192 +967,185 @@
                 </div>
             </div>
             <!--- einde test kindengezin overlay--->
-            <!--
-                    <div class="clearfix"> </div>	
-				</div>
-			</div>
-         		<a class="port-down-arrow down-arrow-to scroll" href="#vaca"><span> </span></a>
-         		</div>
-				
-			</div>
+        </div>
+    </div>
+</div>
+<!--- Portfolio --->
+
+<div class="clearfix"></div>
+
+
+<!---- Vacatures ---->
+<div id="vaca" class="marketing">
+    <div class="container">
+        <div class="portfolio-head text-center">
+            <h4>Jobs</h4>
+        </div>
+        <!----sreen-gallery-cursual---->
+        <div class="sreen-gallery-cursual">
+            <!-- requried-jsfiles-for owl -->
+            <link href="css/owl.carousel.css" rel="stylesheet">
+            <script src="js/owl.carousel.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#owl-vaca").owlCarousel({
+                        items: 1,
+                        lazyLoad: true,
+                        autoPlay: true,
+                        navigation: true,
+                        navigationText: false,
+                        pagination: false
+                    });
+                });
+            </script>
+            <!-- //requried-jsfiles-for owl -->
+            <!-- start content_slider -->
+            <div id="owl-vaca" class="owl-carousel">
+                <div class="item">
+                    <div class="testmonial-people">
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar ervaren <b>Product Owners</b> om ons team te versterken
+                            </p>
+                            <p>Je bent sterk communicatief.</p>
+                            <p>Je bent stressbestendig.</p>
+                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
+                        </div>
+                        <div class="col-md-3 test-people text-center">
+                            <img src="images/po.jpg" title="name"/>
+                        </div>
+                        <div class="col-md-3 test-people-name text-left">
+                            <h4><span>MEDIOR</span> Product owner (M/V)</h4>
+                            <a class="wedobtn" href="/images/Vacature_MediorProductOwner.pdf"
+                                target="_blank">Meer info</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testmonial-people">
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar gemotiveerde <b>Functionele Analisten</b> om ons team
+                                te versterken</p>
+                            <p>Je bent sterk communicatief.</p>
+                            <p>Je bent stressbestendig.</p>
+                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
+                        </div>
+                        <div class="col-md-3 test-people text-center">
+                            <img src="images/fa.jpg" title="name"/>
+                        </div>
+                        <div class="col-md-3 test-people-name text-left">
+                            <h4><span>MEDIOR</span> Functional analyst (M/V)</h4>
+                            <a href="/images/Vacature_MediorFunctionalAnalist.pdf" class="wedobtn"
+                                target="_blank">Meer info</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="testmonial-people">
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar gemotiveerde <b>Business analisten</b> om ons team te
+                                versterken</p>
+                            <p>Je bent sterk communicatief.</p>
+                            <p>Je bent stressbestendig.</p>
+                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
+                        </div>
+                        <div class="col-md-3 test-people text-center">
+                            <img src="images/ba.jpg" title="name"/>
+                        </div>
+                        <div class="col-md-3 test-people-name text-left">
+                            <h4><span>MEDIOR</span> Business analyst (M/V)</h4>
+                            <a class="wedobtn" href="/images/Vacature_MediorBusinessAnalist.pdf"
+                                target="_blank">Meer info</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <!--//sreen-gallery-cursual---->
+
+        </div>
+    </div>
+</div>
+<!---- Vacatures ---->
+
+<!---- Address ---->
+<div id="contact" class="address">
+    <div class="contact">
+        <div class="portfolio-head text-center">
+            <h4>Contact</h4>
+        </div>
+        <div>
+            <p>The Business Analysts</p>
+            <p>Veldkant 33B, 2550 Kontich, Belgi&euml;</p>
+            <p>Gaston Geenslaan 11 b4, 3001 Heverlee</p>
+        </div>
+        <ul class="social-ic-icons">
+            <li class="message">
+                <script type="text/javascript">
+                    <!--
+                    // protected email script by Joe Maller
+                    // JavaScripts available at http://www.joemaller.com
+                    // this script is free to use and distribute
+                    // but please credit me and/or link to my site
+
+                    emailE = 'thebusinessanalysts.be'
+                    emailE = ('info' + '@' + emailE)
+                    document.write('<a href="mailto:' + emailE + '?Subject=Website email"><span> </span></a>')
+                    //-->
+                </script>
+            </li>
+            <li class="linked"><a href="http://www.linkedin.com/company/the-business-analysts"
+                                    target="_blank"><span> </span></a></li>
+            <li class="twitter"><a href="http://twitter.com/#!/TBAnalysts"
+                                    target="_blank"><span> </span></a></li>
+            <li class="behance"><a href="http://facebook.com/TBAnalysts" target="_blank"><span> </span></a>
+            </li>
+            <!--   
+            <li class="dribble"><a href="#"><span> </span></a></li>
+			<li class="behance"><a href="#"><span> </span></a></li>
             -->
+        </ul>
 
-            <!--- Portfolio --->
-            <div class="clearfix"></div>
-
-
-            <!---- Vacatures ---->
-            <div id="vaca" class="marketing">
-                <div class="container">
-                    <div class="portfolio-head text-center">
-                        <h4>Jobs</h4>
-                    </div>
-                    <!----sreen-gallery-cursual---->
-                    <div class="sreen-gallery-cursual">
-                        <!-- requried-jsfiles-for owl -->
-                        <link href="css/owl.carousel.css" rel="stylesheet">
-                        <script src="js/owl.carousel.js"></script>
-                        <script>
-                            $(document).ready(function () {
-                                $("#owl-vaca").owlCarousel({
-                                    items: 1,
-                                    lazyLoad: true,
-                                    autoPlay: true,
-                                    navigation: true,
-                                    navigationText: false,
-                                    pagination: false
-                                });
-                            });
-                        </script>
-                        <!-- //requried-jsfiles-for owl -->
-                        <!-- start content_slider -->
-                        <div id="owl-vaca" class="owl-carousel">
-                            <div class="item">
-                                <div class="testmonial-people">
-                                    <div class="col-md-5 test-info">
-                                        <p>Wij zijn op zoek naar ervaren <b>Product Owners</b> om ons team te versterken
-                                        </p>
-                                        <p>Je bent sterk communicatief.</p>
-                                        <p>Je bent stressbestendig.</p>
-                                        <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
-                                    </div>
-                                    <div class="col-md-3 test-people text-center">
-                                        <img src="images/po.jpg" title="name"/>
-                                    </div>
-                                    <div class="col-md-3 test-people-name text-left">
-                                        <h4><span>MEDIOR</span> Product owner (M/V)</h4>
-                                        <a class="wedobtn" href="/images/Vacature_MediorProductOwner.pdf"
-                                           target="_blank">Meer info</a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testmonial-people">
-                                    <div class="col-md-5 test-info">
-                                        <p>Wij zijn op zoek naar gemotiveerde <b>Functionele Analisten</b> om ons team
-                                            te versterken</p>
-                                        <p>Je bent sterk communicatief.</p>
-                                        <p>Je bent stressbestendig.</p>
-                                        <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
-                                    </div>
-                                    <div class="col-md-3 test-people text-center">
-                                        <img src="images/fa.jpg" title="name"/>
-                                    </div>
-                                    <div class="col-md-3 test-people-name text-left">
-                                        <h4><span>MEDIOR</span> Functional analyst (M/V)</h4>
-                                        <a href="/images/Vacature_MediorFunctionalAnalist.pdf" class="wedobtn"
-                                           target="_blank">Meer info</a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testmonial-people">
-                                    <div class="col-md-5 test-info">
-                                        <p>Wij zijn op zoek naar gemotiveerde <b>Business analisten</b> om ons team te
-                                            versterken</p>
-                                        <p>Je bent sterk communicatief.</p>
-                                        <p>Je bent stressbestendig.</p>
-                                        <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
-                                    </div>
-                                    <div class="col-md-3 test-people text-center">
-                                        <img src="images/ba.jpg" title="name"/>
-                                    </div>
-                                    <div class="col-md-3 test-people-name text-left">
-                                        <h4><span>MEDIOR</span> Business analyst (M/V)</h4>
-                                        <a class="wedobtn" href="/images/Vacature_MediorBusinessAnalist.pdf"
-                                           target="_blank">Meer info</a>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--//sreen-gallery-cursual---->
-
-                    </div>
+        <form method="post" action="php/index.php">
+            <div class="contact-grid">
+                <div class="contact-us">
+                    <input type="text" name="Naam" onfocus="if (this.value == 'Naam*') {this.value = '';}"
+                            required placeholder="Naam*">
+                </div>
+                <div class="contact-us">
+                    <input type="email" name="Email"
+                            onfocus="if (this.value == 'Email*') {this.value = '';}" required
+                            placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                </div>
+                <textarea name="Boodschap" rows="6"
+                            onfocus="if (this.value == 'Boodschap*') {this.value = '';}" required
+                            placeholder="Boodschap*"></textarea>
+                <div class="send ">
+                    <input type="submit" value="Verzend bericht">
                 </div>
             </div>
-            <!---- Vacatures ---->
-
-            <!---- Address ---->
-            <!--<div class="container">-->
-            <div id="contact" class="address">
-                <div class="contact">
-                    <div class="portfolio-head text-center">
-                        <h4>Contact</h4>
-                    </div>
-                    <div>
-                        <p>The Business Analysts</p>
-                        <p>Veldkant 33B, 2550 Kontich, Belgi&euml;</p>
-                    </div>
-                    <ul class="social-ic-icons">
-                        <li class="message">
-                            <script type="text/javascript">
-                                <!--
-                                // protected email script by Joe Maller
-                                // JavaScripts available at http://www.joemaller.com
-                                // this script is free to use and distribute
-                                // but please credit me and/or link to my site
-
-                                emailE = 'thebusinessanalysts.be'
-                                emailE = ('info' + '@' + emailE)
-                                document.write('<a href="mailto:' + emailE + '?Subject=Website email"><span> </span></a>')
-                                //-->
-                            </script>
-                        </li>
-                        <li class="linked"><a href="http://www.linkedin.com/company/the-business-analysts"
-                                              target="_blank"><span> </span></a></li>
-                        <li class="twitter"><a href="http://twitter.com/#!/TBAnalysts"
-                                               target="_blank"><span> </span></a></li>
-                        <li class="behance"><a href="http://facebook.com/TBAnalysts" target="_blank"><span> </span></a>
-                        </li>
-                        <!--   
-                        <li class="dribble"><a href="#"><span> </span></a></li>
-						<li class="behance"><a href="#"><span> </span></a></li>
-                        -->
-                    </ul>
-
-                    <form method="post" action="php/index.php">
-                        <div class="contact-grid">
-                            <div class="contact-us">
-                                <input type="text" name="Naam" onfocus="if (this.value == 'Naam*') {this.value = '';}"
-                                       required placeholder="Naam*">
-                            </div>
-                            <div class="contact-us">
-                                <input type="email" name="Email"
-                                       onfocus="if (this.value == 'Email*') {this.value = '';}" required
-                                       placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                            </div>
-                            <textarea name="Boodschap" rows="6"
-                                      onfocus="if (this.value == 'Boodschap*') {this.value = '';}" required
-                                      placeholder="Boodschap*"></textarea>
-                            <div class="send ">
-                                <input type="submit" value="Verzend bericht">
-                            </div>
-                        </div>
-                    </form>
-                    <div class="map">
-                        <div id='location-canvas' style='width:100%;height:300px'>
-                            <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>-->
-                            <iframe src="https://www.google.com/maps/embed/v1/place?q=Veldkant+33a,+Kontich,+BelgiÃ«&key=AIzaSyBmlKQJ2JLkX4yoGKWgonYEjCyZ3rWjoaI"
-                                    width="902" height="200" style="border:0"></iframe>
-                        </div>
-                    </div>
-                </div>
-
+        </form>
+        <div class="map">
+            <div id='location-canvas' style='width:100%;height:300px'>
+                <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6492831.879838215!2d-102.04805634196835!3d37.38207314531542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited+States!5e0!3m2!1sen!2sin!4v1403540089700"></iframe>-->
+                <iframe src="https://www.google.com/maps/embed/v1/place?q=Veldkant+33a,+Kontich,+BelgiÃ«&key=AIzaSyBmlKQJ2JLkX4yoGKWgonYEjCyZ3rWjoaI"
+                        width="902" height="200" style="border:0"></iframe>
             </div>
-            <!--</div>-->
-            <!---- Address ---->
-            <!---- footer ---->
-            <div class="footer text-center">
+        </div>
+    </div>
+
+</div>
+<!---- Address ---->
+
+<!---- footer ---->
+<div class="footer text-center">
                 <a href="#"><img src="images/logo_footer.png" alt="TBA"/></a>
                 <p class="copy-right">
                     &copy;2015 The Business Analysts
                 </p>
             </div>
-
-            <script type="text/javascript">
+<script type="text/javascript">
                 $(document).ready(function () {
                     /*
                      var defaults = {
@@ -1161,9 +1160,9 @@
 
                 });
             </script>
-            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-        </div>
-        <!---- footer ---->
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!---- footer ---->
+
 </body>
 </html>
 

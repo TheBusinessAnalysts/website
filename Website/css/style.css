@@ -446,6 +446,9 @@ label.mouse-divice {
 .about-grid span.about-icon4 {
     background-position: -732px 0px;
 }
+.about-grid span.about-us-bespoke {
+    background-image: url('../images/about_us_bespoke.png');
+}
 
 .about-grids {
     padding: 3.8em 0 1em;
@@ -2316,7 +2319,7 @@ ul.social-ic-icons li.behance a span:hover {
     background-position: -221px -7px;
 }
 
-/*begin test voor overlay kindengezin reference*/
+/*begin test voor overlay kindengezin reference
 #cover {
     position: fixed;
     top: 0;
@@ -2360,7 +2363,8 @@ ul.social-ic-icons li.behance a span:hover {
     font-weight: bold;
 }
 
-/*einde test voor overlay kindengezin reference*/
+einde test voor overlay kindengezin reference*/
+
 /*--contact form--*/
 .contact {
     /*background:#f2f2f2;*/
@@ -2493,3 +2497,22 @@ input:required:valid, textarea:required:valid {
 
 /*einde test voor overlay vacature po*/
 
+/*test effect referentie logo's*/
+
+    /* Shrink */
+.hvr-shrink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-shrink:hover, .hvr-shrink:focus, .hvr-shrink:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+/*einde test effect referentie logo's*/
