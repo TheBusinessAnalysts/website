@@ -6367,6 +6367,50 @@ button.close {
     text-align: right;
 }
 
+/*begin test modal layout vacatures*/
+
+.modal-title-vac {
+	height: 74px;
+	margin: 37px 25px 0px 50px;
+    color: #f5f5f5;
+}
+
+.modal-content-vac {
+    position: relative;
+    background-color: #19171a;
+    background-clip: padding-box;
+    border: 0px;
+    border-radius: 6px;
+    outline: none;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+
+.modal-header-vac {
+    background-image: url(../images/header_vacature.JPG);
+}
+
+.modal-body-vac {
+	background: #F2F2F2;
+    margin: 0px 0px 0px 0px;
+    padding: 25px;
+	text-align: justify;
+}
+
+.red{
+    color: #f90b0b;
+}
+
+
+.modal-footer-vac {
+    /*border-top: 1px solid #F2F2F2;*/
+    padding: 20px;
+    text-align: right;
+    background-image: url(../images/header_vacature.JPG);
+}
+
+/*einde test modal layout vacatures*/
+
 .modal-footer .btn + .btn {
     margin-bottom: 0;
     margin-left: 5px;

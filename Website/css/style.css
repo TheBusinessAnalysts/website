@@ -1178,6 +1178,7 @@ span.port-mouse {
     font-family: 'open_sanslight';
     margin-top: 3.5em;
     text-align: left;
+    margin-left: 1.5em;
 }
 
 .test-people-name {
@@ -2319,52 +2320,6 @@ ul.social-ic-icons li.behance a span:hover {
     background-position: -221px -7px;
 }
 
-/*begin test voor overlay kindengezin reference
-#cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#ref_kindengezin {
-    height: 880px;
-    width: 730px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    display: none;
-    background: url(../images/Ref_KindenGezin.png) no-repeat;
-    border: 5px solid #cccccc;
-    border-radius: 10px;
-}
-
-#ref_kindengezin:target, #ref_kindengezin:target + #cover {
-    display: block;
-    opacity: 2;
-}
-
-.cancel {
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 2px;
-    background: rgb(245, 245, 245);
-    color: black;
-    height: 30px;
-    width: 35px;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-einde test voor overlay kindengezin reference*/
-
 /*--contact form--*/
 .contact {
     /*background:#f2f2f2;*/
@@ -2451,53 +2406,7 @@ input:required:valid, textarea:required:valid {
 
 /*--end form fields validation--*/
 
-/*begin test voor overlay vacature PO*/
-#cover {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-#vac_po {
-    height: 880px;
-    width: 730px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-    display: none;
-    background: url(../images/Vacature_MediorProductOwner.png) no-repeat;
-    border: 5px solid #cccccc;
-    border-radius: 10px;
-}
-
-#vac_po:target, #vac_po:target + #cover {
-    display: block;
-    opacity: 2;
-}
-
-.cancel {
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 2px;
-    background: rgb(245, 245, 245);
-    color: black;
-    height: 30px;
-    width: 35px;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-}
-
-/*einde test voor overlay vacature po*/
-
-/*test effect referentie logo's*/
+/*effect referentie logo's*/
 
     /* Shrink */
 .hvr-shrink {
@@ -2515,4 +2424,4 @@ input:required:valid, textarea:required:valid {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
-/*einde test effect referentie logo's*/
+/*einde effect referentie logo's*/

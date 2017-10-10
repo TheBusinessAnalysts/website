@@ -199,8 +199,9 @@
     </script>
     <!----//End-top-nav-script---->
     <!--Start google maps responsive-->
-    <script>
-        function initialize() {
+   <script>
+        function initialize()
+        {
             var mapOptions = {
                 zoom: 9,
                 center: new google.maps.LatLng(28.9285745, 77.09149350000007),
@@ -216,8 +217,10 @@
                 position: new google.maps.LatLng(28.9285745, 77.09149350000007)
             });
         }
+        /* om dit op te lossen heb je denk ik een API key nodig en moet je ref leggen in head tag naar:
+        src="https://maps.googleapis.com/maps/api/js?key=xxx&sensor=false"*/
         google.maps.event.addDomListener(window, 'resize', initialize);
-        google.maps.event.addDomListener(window, 'load', initialize)
+        google.maps.event.addDomListener(window, 'load', initialize);
     </script>
     <!--end google maps responsive-->
 
@@ -992,7 +995,7 @@ Het AGIV is beheerder van een aantal authentieke bronnen die de referentie zijn 
 								
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
 							</div>
 						</div>
 					</div>
@@ -1037,7 +1040,7 @@ Het AGIV is beheerder van een aantal authentieke bronnen die de referentie zijn 
 								
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
 							</div>
 						</div>
 					</div>
@@ -1095,7 +1098,7 @@ Het AGIV is beheerder van een aantal authentieke bronnen die de referentie zijn 
 								
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
 							</div>
 						</div>
 					</div>
@@ -1138,66 +1141,139 @@ Het AGIV is beheerder van een aantal authentieke bronnen die de referentie zijn 
             <div id="owl-vaca" class="owl-carousel">
                 <div class="item">
                     <div class="testmonial-people">
-                        <div class="col-md-5 test-info">
-                            <p>Wij zijn op zoek naar ervaren <b>Product Owners</b> om ons team te versterken
-                            </p>
-                            <p>Je bent sterk communicatief.</p>
-                            <p>Je bent stressbestendig.</p>
-                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
-                        </div>
-                        <div class="col-md-3 test-people text-center">
-                            <img src="images/po.jpg" title="name"/>
-                        </div>
-                        <div class="col-md-3 test-people-name text-left">
-                            <h4><span>MEDIOR</span> Product owner (M/V)</h4>
+                        <div class="col-md-3 test-people-name text-center">
+                            <h4><span>Product</span> owner</h4>
                             <a class="wedobtn" href="/images/Vacature_MediorProductOwner.pdf"
                                 target="_blank">Meer info</a>
                         </div>
+                        <div class="col-md-3 test-people text-left">
+                            <img src="images/po.jpg" title="name"/>
+                        </div>
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar toegewijde <b>Product Owners</b> om ons team te versterken</p>
+                        </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="testmonial-people">
-                        <div class="col-md-5 test-info">
-                            <p>Wij zijn op zoek naar gemotiveerde <b>Functionele Analisten</b> om ons team
-                                te versterken</p>
-                            <p>Je bent sterk communicatief.</p>
-                            <p>Je bent stressbestendig.</p>
-                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
+                        <div class="col-md-3 test-people-name text-center">
+                            <h4><span>Functioneel</span> analist</h4>
+                            <a data-toggle="modal" data-target="#Modalfavacature" href="#vac_fa" class="wedobtn">
+                                Meer info</a>
+                            <!--<a href="/images/Vacature_MediorFunctionalAnalist.pdf" class="wedobtn"
+                                target="_blank">Meer info</a>-->
                         </div>
-                        <div class="col-md-3 test-people text-center">
+                        <div class="col-md-3 test-people text-left">
                             <img src="images/fa.jpg" title="name"/>
                         </div>
-                        <div class="col-md-3 test-people-name text-left">
-                            <h4><span>MEDIOR</span> Functional analyst (M/V)</h4>
-                            <a href="/images/Vacature_MediorFunctionalAnalist.pdf" class="wedobtn"
-                                target="_blank">Meer info</a>
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar gedreven <b>Functionele Analisten</b> om ons team
+                                te versterken</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
                 <div class="item">
                     <div class="testmonial-people">
-                        <div class="col-md-5 test-info">
-                            <p>Wij zijn op zoek naar gemotiveerde <b>Business analisten</b> om ons team te
-                                versterken</p>
-                            <p>Je bent sterk communicatief.</p>
-                            <p>Je bent stressbestendig.</p>
-                            <p>Je bezit een &quot;can do&quot; mentaliteit.</p>
-                        </div>
-                        <div class="col-md-3 test-people text-center">
-                            <img src="images/ba.jpg" title="name"/>
-                        </div>
-                        <div class="col-md-3 test-people-name text-left">
-                            <h4><span>MEDIOR</span> Business analyst (M/V)</h4>
+                        <div class="col-md-3 test-people-name text-center">
+                            <h4><span>Business</span> analist</h4>
                             <a class="wedobtn" href="/images/Vacature_MediorBusinessAnalist.pdf"
                                 target="_blank">Meer info</a>
+                        </div>
+                        <div class="col-md-3 test-people text-left">
+                            <img src="images/ba.jpg" title="name"/>
+                        </div>
+                        <div class="col-md-5 test-info">
+                            <p>Wij zijn op zoek naar gemotiveerde <b>Business analisten</b> om ons team te versterken</p>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
             <!--//sreen-gallery-cursual---->
+
+             <!--- begin fa vacature modal --->
+           <div id="Modalfavacature" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+					<div class="modal-center">
+						<div class="modal-content-vac">
+							<div class="modal-header-vac">
+								<div class="modal-title-table">
+									<h2 id="myModalLabel" class="modal-title-vac">
+										Gedreven functioneel analist
+									</h2>
+								</div>
+							</div>
+
+							<div class="modal-body-vac">
+								<div>
+
+                                Ben je op zoek naar een boeiende functie binnen een <b>stabiel consultancybureau met naam en faam?</b> Wens je                                te werken in een team van gedreven collega&#39;s binnen een <b>open en aangename sfeer</b>? Wil jij daarnaast                                 deel uitmaken van een groeiend bedrijf? Dan ben jij d&eacute; persoonnaar wie wij op zoek zijn! 
+
+                                Om het team van The Business Analysts &#40;deel van de Cronos Group&#41; te versterken zoeken we een                                          <b>toegewijde en vakkundige</b> Functionele Analist. Onze ideale collega hecht belang aan community&#45;feel                                  en verkiest een open omgeving waarin eigen input gestimuleerd wordt. 
+
+                                The Business Analysts is een <b>dynamisch</b> en <b>snelgroeiend</b> bedrijf, gericht op                                                      State&#45;Of&#45;The&#45;Art Business oplossingen aan de hand van sterk onderbouwde analysetechnieken, Agile                                  Project Management en een doordachte Enterprise Architectuur. 
+
+                                Momenteel bestaat The Business Analysts uit meer dan 60 consultants. Dit maakt dat we over een <b>brede waaier                                aan ervaring en expertise</b> beschikken. Als groep vormt The Business Analysts een hecht team van consultants                                die hun <b>job met passie</b> uitoefenen. 
+                                
+                                </div>
+
+                                <div>
+                                    <h4 class="red"><b>Als onze collega ben je in staat om volgende taken op te nemen;</b></h4>
+
+                                    <ul>
+                                        <li>Als functionele analist vorm je de <b>brug</b> tussen de <b>operationele</b> kant van de                                                    organisatie enerzijds en de <b>IT</b> anderzijds;</li>
+                                        <li>Je staat in voor de <b>interpretatie</b> van <b>business analyses</b> om zo een deel ervan om te                                            zetten in een functionele analyse;</li>
+                                        <li>Je gaat op zoek naar de behoeften van de organisatie, eindgebruikers en of stakeholders en                                                  vertaalt deze in een functionele analyse. Jouw analyse is vervolgens de aanzet tot de technische                                              analyse;</li>
+                                        <li>Je <b>verzorg</b> de <b>link</b> tussen de business en het implementatie team &#40;testers en                                               developers&#41;;</li>
+                                        <li>Je hebt kennis van de <b>behavorial diagrams</b> van UML &#40;use&#45;cases, sequence diagram,                                              activity diagram, ...&#41; en kan deze modelleren met verschillende modelleertools afhankelijk van                                            de voorkeur van de klant;</li>
+                                        <li>Je hebt ervaring met <b>user stories</b> en kennis van <b>Agil</b> en <b>Scrum</b> binnen de                                                context van bovenvermelde taken.</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 class="red"><b>Jouw profiel;</b></h4>
+
+                                    <ul>
+                                        <li>Je hebt min. 2jaar ervaring als functionele analist;</li>
+                                        <li>Je bezit een <b>&#34;Can&#45;Do&#34;</b> mentaliteit en je hebt zin voor initiatief;</li>
+                                        <li>Je hebt sterke analytische vaardigheden, een conceptueel denkvermogen en goede interpersoonlijke                                            skills;</li>
+                                        <li>Je werkt zelfstandig, nauwkeurig en je kan prioriteiten stellen, omgaan met deadlines;</li>
+                                        <li>Je hebt een grondige kennis van het Nederlands, Engels en Frans.</li>
+                                     </ul> 
+                                </div>
+
+                                <div>
+                                    <h4 class="red"><b>Ons aanbod;</b></h4>
+
+                                    <ul>
+                                        <li>Je wordt lid van een stabiel en dynamisch bedrijf dat openstaat voor <b>jouw input en                                                       idee&euml;n</b>. Bovendien vormen jouw collega&#39;s een <b>ondersteunend team van kennis en                                                  ervaring</b> en krijg je de mogelijkheid om deel te nemen aan interne en externe opleidingen,                                                 seminaries en andere knowledge sharing events;</li>
+                                        <li>Je ontvangt een vast contract met een <b>competitief salaris</b> en een compleet                                                            voordelenpakket &#40;bedrijfswagen, tankkaart, laptop, verzekeringen, etc.&#41;;</li>
+                                        <li>Je komt terecht in een no&#45;nonsense omgeving met <b>directe toegang tot het management</b> en                                            je wordt deel van de gerenommeerde Cronos Group, waar aandacht wordt gegeven aan <b>individuele                                               ondersteuning, professionele uitdagingen en je persoonlijke interesses &#38; ambitie</b>. </li>
+                                     </ul> 
+                                </div>
+
+                                <div>
+                                    <h4 class="red"><b>Contact;</b></h4>
+
+                                    Heb je interesse in deze uitdaging of ken je iemand in jouw netwerk die interesse kan hebben? Stuur je                                        contactgegevens en CV naar Joyce Pauwels via 
+                                        <u><a href="mailto:recruitment@thebusinessanalysts.be">recruitment@thebusinessanalysts.be</a></u>
+                                </div>
+								
+							</div>
+
+							<div class="modal-footer-vac">
+                                <a href="/images/TBA_Vacature_EnthousiasteFunctionalBusinessAnalyst.pdf" class="btn btn-info"
+                                target="_blank">Afprinten</a>
+								<button type="button" class="btn btn-default" data-dismiss="modal">Sluiten</button>
+							</div>
+
+						</div>
+					</div>
+                </div>
+            </div>
+            <!--- einde fa vacature modal--->
 
         </div>
     </div>
